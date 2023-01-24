@@ -1,0 +1,49 @@
+<div class="main">
+  <mat-card class="card">
+    <h2 class="heading">Sign In</h2>
+    <form (submit)="onSignIn($event)" class="form">
+      <mat-form-field class="form-field">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          [formControl]="emailFormControl"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+        />
+        <mat-error
+          *ngIf="
+            emailFormControl.hasError('email') &&
+            !emailFormControl.hasError('required')
+          "
+        >
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [formControl]="passwordFormControl"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+        />
+        <mat-error *ngIf="passwordFormControl.hasError('required')">
+          Password is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <div>
+        <button mat-raised-button color="primary" type="submit">
+          Entry as an Admin
+        </button>
+      </div>
+    </form>
+    <button class="btn-skip" mat-raised-button color="warn" (click)="onSkip()">
+      Skip
+    </button>
+  </mat-card>
+</div>

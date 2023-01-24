@@ -1,0 +1,50 @@
+<div class="admin-page">
+  <div class="add-product-button">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openAddProductDialog()"
+      class="btn-add"
+    >
+      Add Product
+    </button>
+  </div>
+  <table mat-table [dataSource]="products" class="mat-elevation-z8">
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef>Image</th>
+      <td mat-cell *matCellDef="let product">
+        <img
+          [src]="product.image"
+          alt="{{ product.name }}"
+          class="product-image"
+        />
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let product">{{ product.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef>Edit</th>
+      <td
+        mat-cell
+        *matCellDef="let product"
+        (click)="openEditProductDialog(product)"
+      >
+        <button mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>Delete</th>
+      <td mat-cell *matCellDef="let product">
+        <button mat-icon-button (click)="openDeleteProductDialog(product)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

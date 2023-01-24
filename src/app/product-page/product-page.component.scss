@@ -1,0 +1,67 @@
+.main {
+  padding-bottom: 10rem;
+}
+
+.page-header {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.product {
+  border-radius: 1rem;
+  padding: 3rem 0;
+}
+
+.card {
+  width: 100%;
+  height: 70rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 10px #fff;
+
+  &-image {
+    height: 30rem;
+  }
+
+  &-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    align-items: center;
+  }
+
+  &-title {
+    font: 2rem;
+  }
+  &-subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.btn {
+  &-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.quantity {
+  margin: 0 1rem;
+}
+
+.add-to-cart {
+  display: flex;
+}
+
+mat-card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}

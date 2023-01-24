@@ -1,0 +1,59 @@
+<div class="main">
+  <h2 class="page-header">Our products</h2>
+  <div>
+    <mat-grid-list cols="3" gutterSize="2rem">
+      <mat-grid-tile *ngFor="let product of products" class="porduct">
+        <mat-card class="card">
+          <img
+            mat-card-image
+            class="card-image"
+            src="{{ product.image }}"
+            alt="{{ product.name }}"
+          />
+          <div class="card-heading">
+            <mat-card-title class="card-title">{{
+              product.name
+            }}</mat-card-title>
+            <mat-card-subtitle class="card-subtitle">{{
+              product.price | currency
+            }}</mat-card-subtitle>
+          </div>
+          <mat-card-content class="card-content">
+            <p>
+              {{ product.description }}
+            </p>
+            <div class="add-to-cart">
+              <div class="btn-group">
+                <button
+                  mat-raised-button
+                  [disabled]="quantity === 1"
+                  (click)="decrementQuantity()"
+                >
+                  <mat-icon>remove</mat-icon>
+                </button>
+                <p class="quantity">{{ quantity }}</p>
+                <button
+                  mat-raised-button
+                  class="btn-increment"
+                  (click)="incrementQuantity()"
+                >
+                  <mat-icon>add</mat-icon>
+                </button>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">Add to cart</button>
+            <button
+              mat-raised-button
+              color="warn"
+              (click)="goToProductDetails(product)"
+            >
+              Details
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>

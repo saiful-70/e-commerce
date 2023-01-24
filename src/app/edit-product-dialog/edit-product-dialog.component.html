@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>Edit Product</h1>
+<form [formGroup]="productForm">
+  <mat-dialog-content class="dialog">
+    <mat-form-field>
+      <input
+        matInput
+        [(ngModel)]="product.name"
+        placeholder="Product Name"
+        formControlName="name"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        placeholder="Image"
+        formControlName="image"
+        [(ngModel)]="product.image"
+      />
+    </mat-form-field>
+    <div>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Price"
+          formControlName="price"
+          [(ngModel)]="product.price"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Brand Name"
+          formControlName="brandName"
+          [(ngModel)]="product.brandName"
+        />
+      </mat-form-field>
+    </div>
+    <mat-form-field>
+      <textarea
+        matInput
+        placeholder="Description"
+        formControlName="description"
+        [(ngModel)]="product.description"
+      ></textarea>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button
+      mat-raised-button
+      [disabled]="productForm.invalid"
+      (click)="onProductEdit()"
+    >
+      update
+    </button>
+  </mat-dialog-actions>
+</form>

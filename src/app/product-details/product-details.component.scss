@@ -1,0 +1,60 @@
+.card {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.product {
+  &-details {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &-image {
+    width: 30%;
+  }
+
+  &-info {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-description {
+    padding: 2rem 1rem;
+  }
+}
+
+.feature {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+mat-list {
+  margin-top: 20px;
+}
+
+button {
+  width: max-content;
+}
+
+.btn {
+  &-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.quantity {
+  margin: 0 1rem;
+}
