@@ -7,7 +7,8 @@ import { Product } from './interface/product';
   providedIn: 'root',
 })
 export class ProductService {
-  private _url = 'http://localhost:3000/products';
+  // private _url = 'http://localhost:3000/products';
+  private _url = 'https://mockend.com/saiful-70/e-commerce/products';
   products: Product[] = [];
   constructor(private http: HttpClient) {}
 
