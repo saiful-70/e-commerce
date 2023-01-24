@@ -9,6 +9,7 @@ import { Product } from './interface/product';
 export class ProductService {
   // private _url = 'http://localhost:3000/products';
   private _url = 'https://mocki.io/v1/0dae5081-13a6-4e3e-b5a1-f01586636596'; //for only get
+  // private _url = 'http://localhost:8000/products'; //for only get
   products: Product[] = [];
   constructor(private http: HttpClient) {}
 

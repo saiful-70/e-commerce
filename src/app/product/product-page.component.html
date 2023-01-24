@@ -2,7 +2,7 @@
   <h2 class="page-header">Our products</h2>
   <div>
     <mat-grid-list cols="3" gutterSize="2rem" rowHeight="40rem">
-      <mat-grid-tile *ngFor="let product of products" class="porduct">
+      <mat-grid-tile *ngFor="let product of cart" class="porduct">
         <mat-card class="card">
           <img
             mat-card-image
@@ -26,16 +26,17 @@
               <div class="btn-group">
                 <button
                   mat-raised-button
-                  [disabled]="quantity === 1"
-                  (click)="decrementQuantity()"
+                  [disabled]="product.qty === 1"
+                  (click)="decrementQuantity(product)"
                 >
                   <mat-icon>remove</mat-icon>
                 </button>
-                <p class="quantity">{{ quantity }}</p>
+                <!-- <input matInput #quantityInput value="1" type="number" /> -->
+                <p class="quantity">{{ product.qty }}</p>
                 <button
                   mat-raised-button
                   class="btn-increment"
-                  (click)="incrementQuantity()"
+                  (click)="incrementQuantity(product)"
                 >
                   <mat-icon>add</mat-icon>
                 </button>
