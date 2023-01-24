@@ -1,8 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Product } from '../interface/product';
-import { ProductService } from '../product.service';
+import { Product } from '../../../interface/product';
+import { ProductService } from '../../../product.service';
 
 @Component({
   selector: 'app-add-dialog',

@@ -5,8 +5,8 @@ import {
   MAT_DIALOG_DATA,
 } from '@angular/material/dialog';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Product } from '../interface/product';
-import { ProductService } from '../product.service';
+import { Product } from '../../../interface/product';
+import { ProductService } from '../../../product.service';
 
 @Component({
   selector: 'app-edit-product-dialog',

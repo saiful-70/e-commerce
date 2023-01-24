@@ -20,16 +20,16 @@
       "id": 453879574,
       "name": "Google Pixel 4a",
       "image": "assets/pixel-4a.jpg",
-      "price": 349,
+      "price": "449",
       "brandName": "Google",
       "description": "The budget-friendly Pixel 4a offers a great camera and clean software experience."
     },
     {
-      "id": 1674537818443,
-      "name": "nokia 110",
+      "id": 1674557215789,
+      "name": "Nokia 110",
       "image": "assets/galaxy-s21.jpg",
-      "price": 0,
-      "brandName": "nokia",
+      "price": 99,
+      "brandName": "Nokia",
       "description": ""
     }
   ]

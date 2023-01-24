@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../product.service';
+import { ProductService } from '../../product.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Product } from '../interface/product';
+import { Product } from '../../interface/product';
 
 import { Router, ActivatedRoute } from '@angular/router';
 

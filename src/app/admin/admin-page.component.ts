@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { MatDialog } from '@angular/material/dialog';
-import { AddProductDialogComponent } from '../add-product-dialog/add-product-dialog.component';
-import { EditProductDialogComponent } from '../edit-product-dialog/edit-product-dialog.component';
-import { DeleteProductDialogComponent } from '../delete-product-dialog/delete-product-dialog.component';
+import { AddProductDialogComponent } from './components/add-product-dialog/add-product-dialog.component';
+import { EditProductDialogComponent } from './components/edit-product-dialog/edit-product-dialog.component';
+import { DeleteProductDialogComponent } from './components/delete-product-dialog/delete-product-dialog.component';
 import { Product } from '../interface/product';
 
 @Component({
