@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/material.module';
 
 import { ProductRoutingModule } from './product-routing.module';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductPageComponent } from './product-page.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [ProductPageComponent, ProductDetailsComponent],

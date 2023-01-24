@@ -23,14 +23,6 @@
       "price": "449",
       "brandName": "Google",
       "description": "The budget-friendly Pixel 4a offers a great camera and clean software experience."
-    },
-    {
-      "id": 1674557215789,
-      "name": "Nokia 110",
-      "image": "assets/galaxy-s21.jpg",
-      "price": 99,
-      "brandName": "Nokia",
-      "description": ""
     }
   ]
 }

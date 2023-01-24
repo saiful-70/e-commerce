@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminPageComponent } from './admin/admin-page.component';
-import { ProductDetailsComponent } from './product/product-details/product-details.component';
-import { ProductPageComponent } from './product/product-page/product-page.component';
+import { ProductDetailsComponent } from './product/components/product-details/product-details.component';
+import { ProductPageComponent } from './product/product-page.component';
 
 import { SignInComponent } from './sign-in/sign-in.component';
 
